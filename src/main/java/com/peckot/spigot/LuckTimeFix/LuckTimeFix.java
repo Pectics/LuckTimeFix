@@ -31,7 +31,7 @@ public final class LuckTimeFix extends JavaPlugin implements CommandExecutor {
         if (provider != null) api = provider.getProvider();
         getCommand("lucktime").setExecutor(this);
         message = new Message(this.getConfig());
-        allowNegativeTime = getConfig().getBoolean("allowNegativeTime");
+        allowNegativeTime = !getConfig().getBoolean("allowNegativeTime");
         getLogger().info("Plugin LuckTimeFix Enabled!");
         getLogger().info("Made by Pectics. https://peckot.com");
     }

@@ -1,7 +1,6 @@
 name: LuckTimeFix
 version: '${project.version}'
 main: com.peckot.spigot.LuckTimeFix.LuckTimeFix
-api-version: 1.13
 depend: [ LuckPerms ]
 author: Pectics
 description: To directly modify players' parent group or permission time.
