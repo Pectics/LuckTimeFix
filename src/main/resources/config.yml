@@ -1,0 +1,27 @@
+# 允许负数时间
+# 这决定了进行 minus 操作时，若操作时间大于原继承时间，是否将继承时间设置为负数
+# 若设置为 true，则操作时间大于原继承时间时，取消继承原权限或权限组
+# 若设置为 false，则会检测操作时间，若大于原继承时间则会拒绝执行
+# 默认为 false
+allowNegativeTime: false
+
+messages:
+  reloaded: "&a配置文件已重载!"
+  noPermission: "&c你没有权限执行此操作!"
+  argumentError: "&c参数错误! 使用 /lt help 查看帮助."
+  playerNotFound: "&c玩家 {player} 不存在!"
+  groupNotFound: "&c权限组 {group} 不存在!"
+  invalidOperation: "&c无效的时长操作! 可用值：plus, minus."
+  invalidTime: "&c无效的时长! 请输入小于当前继承时长的值."
+  permanent: "&c无法修改继承时长! 玩家 {player} 已永久继承 {arg}."
+  added: "&a成功将玩家 {player} 继承 {arg} 的时长增加了 {time}."
+  removed: "&a成功将玩家 {player} 继承 {arg} 的时长减少了 {time}."
+  help: |-
+    &e&l-----&r &a&lLuckTimeFix&r &a帮助信息 &e&l-----&r
+    &e&l- 指令帮助：
+    &a> /lt [help] &e- 显示此页面
+    &a> /lt reload &e- 重载配置文件
+    &a> /lt (玩家) group (权限组) (add|remove) (时间) &e- 更改权限组继承时长
+    &a> /lt (玩家) perm (权限节点) (add|remove) (时间) &e- 更改权限节点继承时长
+    &e&l- 权限节点：
+    &a> lucktimefix.admin &e- 所有指令权限
